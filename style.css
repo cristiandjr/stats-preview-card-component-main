@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@100;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(233, 47%, 7%);
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 1px;
+}
+.container {
+    width: 100%;
+}
+.card {
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+    background:  hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+.business {
+   padding: 50px;
+   width: 1200px;
+}
+.business h1 { 
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 100%);
+}
+.business h1 span{ 
+    color: hsl(277, 64%, 61%);
+}
+.business p{ 
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+.stats { 
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25%;
+}
+.stats span{ 
+    font-weight: 800;
+    font-size: 2rem;
+    color: white;
+}
+.card img {
+    width: 100%;
+    filter: grayscale(100%) brightness(70%) sepia(50%) hue-rotate(-100deg) saturate(500%) contrast(0.8);
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+@media (max-width: 375px) {
+    .container {
+        margin-top: -30px;
+        margin-left: -15px;
+        padding: 20px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+       
+        background:  hsl(244, 38%, 16%);
+        border-radius: 10px;
+    }
+    .business {
+        text-align: center;
+        padding: 50px;
+        width: 380px;
+    }
+    .business p{ 
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+    .card img {
+        border-radius: 10px 10px 0 0;
+    }
+    .stats { 
+        margin: 0 auto;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .stats span{ 
+        font-weight: 800;
+        font-size: 2rem;
+        color: white;
+    }
+}
